@@ -1,4 +1,5 @@
 using MassTransit;
+using RabbitMQ.Client;
 using SharedLib.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,8 +15,9 @@ builder.Services.AddMassTransit(config =>
             host.Password(builder.Configuration["ServiceBus.Password"]);
         });
         //exchange
-        cfg.Message<Order>(c => c.SetEntityName("order1"));
+        cfg.Message<Order>(c => c.SetEntityName("order"));
 
+        //below code sometimes not working with Direct just comment 
         //cfg.Publish<Order>(x =>
         //{
         //    x.ExchangeType = ExchangeType.Direct;
