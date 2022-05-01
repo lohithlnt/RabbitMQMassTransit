@@ -19,3 +19,8 @@ Send() - Useful to send a command since a command need to be executed once. Need
 i.e. which queue to go to use send method.
 
 When a message is sent, it is delivered to a specific endpoint using a DestinationAddress.
+
+MassTransit creates durable, fanout exchanges by default, and queues are also durable by default.
+
+MassTransit encouranges and support the use of interfaces for message contracts, and initializers make
+it easy to produce interface messages.
