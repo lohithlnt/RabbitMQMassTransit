@@ -1,5 +1,5 @@
-﻿using InventoryService.Models;
-using MassTransit;
+﻿using MassTransit;
+using SharedLib.Models;
 
 namespace InventoryService
 {

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderService", "OrderService\OrderService.csproj", "{0DFD9D8E-4A8B-4008-ACCE-68F52AB00A2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderService", "OrderService\OrderService.csproj", "{0DFD9D8E-4A8B-4008-ACCE-68F52AB00A2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryService", "InventoryService\InventoryService.csproj", "{5A1F0190-85B5-4006-AB74-3D6488179B20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryService", "InventoryService\InventoryService.csproj", "{5A1F0190-85B5-4006-AB74-3D6488179B20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLib", "SharedLib\SharedLib.csproj", "{EFC6AF05-A438-4CCD-A439-573FA33D451F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5A1F0190-85B5-4006-AB74-3D6488179B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A1F0190-85B5-4006-AB74-3D6488179B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A1F0190-85B5-4006-AB74-3D6488179B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFC6AF05-A438-4CCD-A439-573FA33D451F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFC6AF05-A438-4CCD-A439-573FA33D451F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFC6AF05-A438-4CCD-A439-573FA33D451F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFC6AF05-A438-4CCD-A439-573FA33D451F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

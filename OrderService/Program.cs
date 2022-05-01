@@ -1,4 +1,5 @@
 using MassTransit;
+using SharedLib.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,20 @@ builder.Services.AddMassTransit(config =>
             host.Username(builder.Configuration["ServiceBus:Username"]);
             host.Password(builder.Configuration["ServiceBus.Password"]);
         });
+        //exchange
+        cfg.Message<Order>(c => c.SetEntityName("order1"));
+
+        //cfg.Publish<Order>(x =>
+        //{
+        //    x.ExchangeType = ExchangeType.Direct;
+        //});
+
+        //cfg.Publish<Order>(x =>
+        //{
+        //    x.Durable = false; //default:true
+        //    x.AutoDelete = true; //default : false
+        //    x.ExchangeType = "fanout"; //default, allows any valid exchange type
+        //});
     });
 });
 

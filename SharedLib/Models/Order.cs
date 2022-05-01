@@ -1,4 +1,4 @@
-﻿namespace OrderService.Models
+﻿namespace SharedLib.Models
 {
     public class Order
     {

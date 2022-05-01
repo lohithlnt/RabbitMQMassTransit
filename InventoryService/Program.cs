@@ -1,5 +1,7 @@
 using InventoryService;
 using MassTransit;
+using RabbitMQ.Client;
+using SharedLib.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

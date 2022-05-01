@@ -1,6 +1,6 @@
 ﻿using MassTransit;
 using Microsoft.AspNetCore.Mvc;
-using OrderService.Models;
+using SharedLib.Models;
 
 namespace OrderService.Controllers
 {
