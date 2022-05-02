@@ -24,3 +24,9 @@ MassTransit creates durable, fanout exchanges by default, and queues are also du
 
 MassTransit encouranges and support the use of interfaces for message contracts, and initializers make
 it easy to produce interface messages.
+
+Message Brokers
+
+kafka and RabbitMQ both are free - open source
+
+Azure Service Bus and Amazon SQS both are - Cloud Managed
