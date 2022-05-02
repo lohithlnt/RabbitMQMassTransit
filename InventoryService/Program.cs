@@ -1,7 +1,5 @@
 using InventoryService;
 using MassTransit;
-using RabbitMQ.Client;
-using SharedLib.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +25,8 @@ builder.Services.AddMassTransit(config =>
 
 builder.Services.AddMassTransitHostedService(true);
 
+
+builder.Services.AddSingleton<IBasketConsumer, BasketConsumer>();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -48,5 +48,9 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+//for Azure service Bus
+var bus = app.Services.GetService<IBasketConsumer>();
+bus.RegisterReceiveMessageHandler();
 
 app.Run();
